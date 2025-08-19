@@ -21,6 +21,7 @@ const Header = () => {
               width={160}
               height={60}
               className="h-14 w-auto"
+              priority={false}
             />
           </Link>
 

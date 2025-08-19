@@ -63,9 +63,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        {/* Google Fonts */}
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
-        
         {/* Meta Tags Básicas */}
         <title>Marta Amália Estética Integrativa - Tratamentos Personalizados em Recife-PE</title>
         <meta name="description" content="Especializada em estética integrativa, oferecemos tratamentos personalizados para cuidar da sua beleza e bem-estar. Drenagem linfática, terapias manuais, design de sobrancelhas e mais em Recife-PE." />
