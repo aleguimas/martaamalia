@@ -160,13 +160,22 @@ const Footer = () => {
             <div className="text-gray-400 text-sm">
               © {currentYear} Marta Amália Estética Integrativa. Todos os direitos reservados.
             </div>
-            <div className="flex space-x-6 text-sm">
-              <Link href="/politica-privacidade" className="text-gray-400 hover:text-white transition-colors">
-                Política de Privacidade
-              </Link>
-              <Link href="/termos-uso" className="text-gray-400 hover:text-white transition-colors">
-                Termos de Uso
-              </Link>
+            <div className="flex items-center">
+              <a 
+                href="https://www.simplidigital.dev" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center"
+                aria-label="Desenvolvido por Simpli Digital"
+              >
+                <Image
+                  src="/logo-simpli.png"
+                  alt="Simpli Digital"
+                  width={120}
+                  height={30}
+                  className="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity"
+                />
+              </a>
             </div>
           </div>
         </div>
