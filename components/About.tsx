@@ -1,42 +1,61 @@
+import Image from 'next/image'
+
 const About = () => {
   return (
     <section id="sobre" className="section-padding bg-white">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Section */}
-          <div className="relative">
-            <div className="relative z-10">
-              <div className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl flex items-center justify-center shadow-lg">
-                {/* Placeholder para foto da Marta Amália */}
-                <div className="text-center text-gray-600">
-                  <svg 
-                    className="w-24 h-24 mx-auto mb-4 text-pink-400" 
-                    fill="currentColor" 
-                    viewBox="0 0 20 20"
-                    aria-label="Ícone de perfil da Marta Amália"
-                  >
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                  </svg>
-                  <p className="text-lg font-medium">Marta Amália</p>
-                  <p className="text-sm">Foto da profissional</p>
+          <div className="relative flex justify-center lg:justify-start">
+            {/* Main Image Container */}
+            <div className="relative z-20">
+              {/* Sophisticated Frame */}
+              <div className="relative">
+                {/* Outer Frame with Shadow */}
+                <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-[2rem] shadow-2xl p-8 transform -rotate-1 hover:rotate-0 transition-all duration-500 hover:scale-105">
+                  {/* Inner Frame with Border */}
+                  <div className="relative bg-gradient-to-br from-pink-50 via-white to-rose-50 rounded-[1.5rem] p-6 border border-pink-100">
+                    {/* Image Container */}
+                    <div className="relative w-80 h-96 lg:w-96 lg:h-[480px] overflow-hidden rounded-2xl">
+                      <Image
+                        src="/Marta-Amália-Estética-1.webp"
+                        alt="Marta Amália - Esteticista Integrativa em Recife"
+                        width={480}
+                        height={600}
+                        className="object-contain w-full h-full drop-shadow-xl"
+                        style={{
+                          borderRadius: '1rem',
+                          transform: 'scale(1.1)'
+                        }}
+                        priority={false}
+                        quality={95}
+                      />
+                    </div>
+                    
+                    {/* Elegant Corner Decorations */}
+                    <div className="absolute -top-2 -right-2 w-12 h-12 bg-gradient-to-br from-pink-200 to-rose-200 rounded-full opacity-90 shadow-lg"></div>
+                    <div className="absolute -bottom-2 -left-2 w-10 h-10 bg-gradient-to-br from-rose-200 to-pink-200 rounded-full opacity-90 shadow-lg"></div>
+                    
+                    {/* Subtle Inner Decorations */}
+                    <div className="absolute top-4 right-4 w-6 h-6 bg-gradient-to-br from-pink-100 to-rose-100 rounded-full opacity-60"></div>
+                    <div className="absolute bottom-4 left-4 w-4 h-4 bg-gradient-to-br from-rose-100 to-pink-100 rounded-full opacity-60"></div>
+                  </div>
                 </div>
                 
-                {/* Quando tiver a foto real, usar este código:
-                <img 
-                  src="/images/marta-amalia.jpg" 
-                  alt="Marta Amália - Esteticista Integrativa em Recife-PE"
-                  className="w-full h-full object-cover rounded-2xl"
-                  loading="lazy"
-                  width="500"
-                  height="500"
-                />
-                */}
+                {/* Floating Accent Elements */}
+                <div className="absolute -top-4 -right-4 w-6 h-6 bg-pink-300 rounded-full opacity-70 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+                <div className="absolute -bottom-4 -left-4 w-4 h-4 bg-rose-300 rounded-full opacity-70 animate-bounce" style={{ animationDelay: '1s' }}></div>
               </div>
             </div>
             
-            {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-pink-100 rounded-full" aria-hidden="true"></div>
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-rose-100 rounded-full" aria-hidden="true"></div>
+            {/* Background Decorative Elements */}
+            <div className="absolute -top-12 -right-12 w-40 h-40 bg-gradient-to-br from-pink-200 to-rose-200 rounded-full opacity-30 blur-2xl" aria-hidden="true"></div>
+            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-rose-200 to-pink-200 rounded-full opacity-30 blur-2xl" aria-hidden="true"></div>
+            
+            {/* Subtle Floating Particles */}
+            <div className="absolute top-16 -right-6 w-3 h-3 bg-pink-400 rounded-full opacity-50 animate-pulse"></div>
+            <div className="absolute bottom-20 -left-4 w-2 h-2 bg-rose-400 rounded-full opacity-50 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+            <div className="absolute top-32 -right-2 w-2 h-2 bg-pink-300 rounded-full opacity-40 animate-pulse" style={{ animationDelay: '2s' }}></div>
           </div>
 
           {/* Content Section */}
