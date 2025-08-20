@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -52,11 +51,9 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-2 mb-6">
-                <Image
+                <img
                   src="/logotipo-marta-amalia.png"
                   alt="Marta Amália Estética Integrativa"
-                  width={160}
-                  height={60}
                   className="h-12 w-auto brightness-0 invert"
                 />
               </div>
@@ -167,11 +164,9 @@ const Footer = () => {
                 className="flex items-center"
                 aria-label="Desenvolvido por Simpli Digital"
               >
-                <Image
+                <img
                   src="/logo-simpli.png"
                   alt="Simpli Digital"
-                  width={120}
-                  height={30}
                   className="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity"
                 />
               </a>

@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,13 +14,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image
+            <img
               src="/logotipo-marta-amalia.png"
               alt="Marta Amália Estética Integrativa"
-              width={160}
-              height={60}
               className="h-14 w-auto"
-              priority={false}
             />
           </Link>
 

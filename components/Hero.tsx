@@ -22,7 +22,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-sm sm:text-base lg:text-lg text-gray-700 max-w-md">
-              Protocolos avançados de estética facial e corporal em Recife-PE.
+              Especialista em estética corporal e facial, oferecemos tratamentos personalizados para realçar sua beleza e bem-estar.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 lg:gap-4">
               <a
@@ -71,9 +71,9 @@ const Hero = () => {
                         alt="Marta Amália - Esteticista em Recife"
                         width={480}
                         height={600}
-                        className="object-cover w-full h-full drop-shadow-xl"
+                        className="object-contain w-full h-full drop-shadow-xl"
                         style={{
-                          objectPosition: 'center top',
+                          objectPosition: 'center bottom',
                           borderRadius: '0.5rem',
                           transform: 'scale(1.05)'
                         }}
