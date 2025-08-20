@@ -18,7 +18,6 @@ const Footer = () => {
     "Pós-cirúrgicos",
     "Rejuvenescimento",
     "Design de Sobrancelhas",
-    "Depilação",
     "Limpeza de Pele",
     "Tratamento de Acne",
     "Massagem Relaxante"
