@@ -22,7 +22,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-sm sm:text-base lg:text-lg text-gray-700 max-w-md">
-              Especialista em estética corporal e facial, oferecemos tratamentos personalizados para realçar sua beleza e bem-estar.
+              Especialista em estética corporal e facial, oferecendo tratamentos personalizados para realçar sua beleza e bem-estar.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 lg:gap-4">
               <a
